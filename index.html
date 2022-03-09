@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaş ve Burç Hesaplama Ödevi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body onload="sec()">
+    <label for="secimYasBulma">Yaş Bulma</label>
+    <input type="radio" name="secim" id="secimYasBulma">
+    <label for="secimBurcBulma">Burç Bulma</label>
+    <input type="radio" name="secim" id="secimBurcBulma">
+
+    <span id="yas">
+        <label for="numberYil">Doğum Yılınızı:</label>
+        <select id="numberYil">
+            <option value="0">Seçiniz</option>
+        </select>
+
+        <label for="numberGuncel">Güncel Yılı:</label>
+        <select id="numberGuncel">
+            <option value="0">Seçiniz</option>
+        </select>
+    </span>
+
+    <span id="burc">
+        <label for="numberAy">Doğum Ayınızı:</label>
+        <select id="numberAy">
+            <option value="0">Seçiniz</option>
+        </select>
+
+        <label for="numberGun">Doğum Gününüzü:</label>
+        <select id="numberGun">
+            <option value="0">Seçiniz</option>
+        </select>
+    </span>
+    <input type="submit" value="Hesapla" onclick="hesapla()">
+    <h3 id="sonuc"></h3>
+    <script src="script.js"></script>
+</body>
+</html>
